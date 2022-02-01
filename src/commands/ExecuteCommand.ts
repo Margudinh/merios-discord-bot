@@ -13,6 +13,8 @@ const executeCommand = async (commandName: string, arg: string, options: ParsedO
     message.reply({
       content: `**Error: ** the command ${commandName} does not exists`
     })
+
+    return;
   }
 
   const command = commands.get(commandName);
